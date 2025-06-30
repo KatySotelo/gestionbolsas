@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Ingreso de Cajas</h2>
+<form method="post">
+  <div class="mb-3">
+    <label class="form-label">Código REF:</label>
+    <input type="text" class="form-control" name="ref" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Código LOT:</label>
+    <input type="text" class="form-control" name="lot" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Fecha de Vencimiento:</label>
+    <input type="date" class="form-control" name="vencimiento" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Tipo de Caja:</label>
+    <input type="text" class="form-control" name="tipo" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Cantidad:</label>
+    <input type="number" class="form-control" name="cantidad" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+{% endblock %}
